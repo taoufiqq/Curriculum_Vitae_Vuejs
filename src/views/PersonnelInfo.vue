@@ -4,19 +4,6 @@
   <form @submit.prevent="handelSubmit">
 
 
-      <!-- <div class="col-sm-6">
-      <div class="input-block">
-        <label for="">First Name</label>
-        <input type="text" class="form-control">
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="input-block">
-        <label for="">Last Name</label>
-        <input type="text" class="form-control">
-      </div>
-    </div> -->
-
     <div class="form-group">
       <label for="name">Full Name</label>
       <input
@@ -25,19 +12,16 @@
         id="name"
         v-model="form1.name"
         placeholder="Full Name "
-      />
-
-
-      
+      />    
     </div>
 
  <div class="form-group">
       <label for="age">Age</label>
       <input
-        type="text"
+        type="number"
         class="form-control"
         id="age"
-        v-model="form1.image"
+        v-model="form1.age"
         placeholder="Age"
       />
     </div>
@@ -67,25 +51,24 @@
     <div class="form-group">
       <label for="email">EMAIL</label>
       <input
-        type="text"
+        type="email"
         class="form-control"
         id="email"
-        v-model="form1.cin"
+        v-model="form1.email"
         placeholder="EMAIL"
       />
     </div>
 
-       <div class="form-group">
-      <label for="image">IMAGE</label>
+    <div class="form-group">
+      <label for="specialité">Specialité</label>
       <input
         type="text"
         class="form-control"
-        id="image"
-        v-model="form1.address"
-        placeholder="IMAGE"
+        id="specialité"
+        v-model="form1.specialité"
+        placeholder="Specialité"
       />
     </div>
-
 
 
    
@@ -96,17 +79,18 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "PersonnelInfo",
   data() {
     return {
 
       form1: {
 
       name: "",
-      phone: "",
-      cin: "",
-      image: "",
+      age: "",
       address: "",
+      phone: "",      
+      email: "",
+      specialité: "",
     
 
       }
@@ -118,7 +102,7 @@ export default {
     handelSubmit(){
 
        localStorage.setItem('form1',JSON.stringify(this.form1));
-       redirect('/ProInfo')
+       redirect('/formation')
     }
   }
 };
