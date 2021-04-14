@@ -5,23 +5,23 @@
 
     <div class="form-group">
         <label for="Langue1">Langue 1</label>
-        <input type="text" class="form-control" id="langue1"  placeholder="Langue 1"  v-model="form2.angue1">
+        <input type="text" class="form-control" id="langue1"  placeholder="Langue 1"  v-model="form4.langue1">
         
       </div>
 
       <div class="form-group">
         <label for="Langue2">Langue 2</label>
-        <input type="text" class="form-control" id="langue2" placeholder="Langue 2"  v-model="form2.langue2">
+        <input type="text" class="form-control" id="langue2" placeholder="Langue 2"  v-model="form4.langue2">
       </div>
 
        <div class="form-group">
         <label for="Langue3">Langue 3</label>
-        <input type="text" class="form-control" id="langue3" placeholder="Langue 3"  v-model="form2.langue3">
+        <input type="text" class="form-control" id="langue3" placeholder="Langue 3"  v-model="form4.langue3">
       </div>
 
       <div class="form-group">
         <label for="Langue4">Langue 4</label>
-        <input type="text" class="form-control" id="langue4" placeholder="Langue 4 "  v-model="form2.langue4">
+        <input type="text" class="form-control" id="langue4" placeholder="Langue 4 "  v-model="form4.langue4">
       </div>
       
     <button type="submit" class="btn btn-primary">Submit</button>
@@ -34,7 +34,7 @@ export default {
   data() {
     return {
 
-      form2: {
+      form4: {
 
       langue1: "",
       langue2: "",
@@ -49,7 +49,7 @@ export default {
   methods : {
     handelSubmit(){
 
-       localStorage.setItem('form2',JSON.stringify(this.form2))
+       localStorage.setItem('form4',JSON.stringify(this.form4))
         redirect('/loisers')
     }
   }

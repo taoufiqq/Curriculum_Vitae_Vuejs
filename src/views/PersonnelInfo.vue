@@ -102,7 +102,8 @@ export default {
     handelSubmit(){
 
        localStorage.setItem('form1',JSON.stringify(this.form1));
-       redirect('/formation')
+       router.push("formation")
+
     }
   }
 };

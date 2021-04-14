@@ -42,60 +42,51 @@ form{
   color: #42b983;
 }
 
+#CV{
+    width: 50%;
+    height: 90vh;
+    margin-left: 25%;
+  border: 1px solid white;
+}
 
-
-
-
-
-
- body>header{
-        font-size: 3em;
-        font-weight: bold;
-        color: blue;
-        margin-bottom: 1em ; /*50px/3em;*/
-    }
- 
-    /* titres du bloc main */
-    #formation>header, #expe>header {
-        font-size: 2em; /* 32 px */
-        margin: 0.625em  0px; /* 20px/32px */
-        padding : 0.7% ; /*5px/706px */ 
-        font-weight: bold;
-        color: white;
-        background-color: blue;
-    }
- 
-    /* titre et bloc main à gauche */
-/* DEPLACE DANS LE fichier cvpc.css
-    body>header, main{
-        display: block;
-        float:left;
-        width:73% ; /* 750px/1026px */
-/*    }*/
- 
-    /* diplômes */
-    #formation table th {
-        text-align: left;
-        font-size: 1.2em;
-    }
-    /* espaces entre 2 formations */
-    #formation table tr:nth-child(2n) td {
-        padding-bottom: 1em; /* 16px */
-    }
- 
-    
-    /* bloc photo + adresse  et divers */
-/* DEPLACE DANS LE fichier cvpc.css
-    #civil, #divers {
-        float:right;
-        width: 24%;
-        background-color: blue;
-        color:white;
-        padding: .5em  0.8% ;
-    }
-*/
-    /* pas de triangles pour détails à la demande */
-
-
-
+#infoPersonnel{
+    float: left;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 3%;
+        line-height: 0.7;
+}
+#title{
+    float: left;
+    padding-left: 5%;
+    width: 72%; 
+}
+#pics{
+    padding-top: 2%;
+    padding-left: 74%;
+}
+img{
+      width: 85%;
+}
+.formation{
+    width: 71%;
+    margin-top: 1%;
+    color: blue;
+    float: left;
+    margin-left: 14%;
+    border: 1px solid;
+}
+table{
+  float: left;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+td{
+  width: 20%;
+  color: blue;
+}
+th{
+  width: 60%;
+ padding-left: 25%;
+}
 </style>

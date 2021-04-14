@@ -5,18 +5,18 @@
 
     <div class="form-group">
         <label for="Loiser1">Loiser 1</label>
-        <input type="text" class="form-control" id="loiser1"  placeholder="Loiser 1"  v-model="form2.loiser1">
+        <input type="text" class="form-control" id="loiser1"  placeholder="Loiser 1"  v-model="form5.loiser1">
         
       </div>
 
       <div class="form-group">
         <label for="Loiser2">Loiser 2</label>
-        <input type="text" class="form-control" id="loiser2" placeholder="Loiser 2"  v-model="form2.loiser2">
+        <input type="text" class="form-control" id="loiser2" placeholder="Loiser 2"  v-model="form5.loiser2">
       </div>
 
        <div class="form-group">
         <label for="Loiser3">Loiser 3</label>
-        <input type="text" class="form-control" id="loiser3" placeholder="Loiser 3"  v-model="form2.loiser3">
+        <input type="text" class="form-control" id="loiser3" placeholder="Loiser 3"  v-model="form5.loiser3">
       </div>
 
 
@@ -30,7 +30,7 @@ export default {
   data() {
     return {
 
-      form2: {
+      form5: {
 
       loiser1: "",
       loiser2: "",
@@ -45,7 +45,7 @@ export default {
   methods : {
     handelSubmit(){
 
-       localStorage.setItem('form2',JSON.stringify(this.form2))
+       localStorage.setItem('form5',JSON.stringify(this.form5))
         redirect('/loisers')
     }
   }
