@@ -58,12 +58,12 @@ form{
 }
 #title{
     float: left;
-    padding-left: 5%;
+    padding-left: 25%;
     width: 72%; 
 }
 #pics{
-    padding-top: 2%;
-    padding-left: 74%;
+
+    padding-left: 77%;
 }
 img{
       width: 85%;
@@ -86,7 +86,7 @@ td{
   color: blue;
 }
 th{
-  width: 60%;
- padding-left: 25%;
+  width: 80%;
+
 }
 </style>

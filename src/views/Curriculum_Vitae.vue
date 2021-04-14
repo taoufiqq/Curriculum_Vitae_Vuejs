@@ -74,19 +74,19 @@
 	<table>
                     <tbody>
 			<tr>
-                           
+                            <td>{{form4.type1}}</td>
                             <th>{{form4.langue1}}</th>
 			</tr>
 			<tr>
-                            
+                            <td>{{form4.type2}}</td>
                             <th>{{form4.langue2}}</th>
 			</tr>
 			<tr>
-                           
+                            <td>{{form4.type3}}</td>
                             <th>{{form4.langue3}}</th>
 			</tr>
 			<tr>
-                          
+                            <td>{{form4.type4}}</td>
                             <th>{{form4.langue4}}</th>
 			</tr>
                     </tbody>
