@@ -5,6 +5,8 @@ import Experience from '../views/Experience.vue'
 import Langues from '../views/Langues.vue'
 import Loisers from '../views/Loisers.vue'
 import Curriculum_Vitae from '../views/Curriculum_Vitae.vue'
+import Download from '../views/Download.vue'
+
 const routes = [
   {
     path: '/',
@@ -35,6 +37,11 @@ const routes = [
     path: '/curriculum_Vitae',
     name: 'curriculum_Vitae',
     component: Curriculum_Vitae
+  },
+  {
+    path: '/download',
+    name: 'Download',
+    component: Download
   },
 ]
 
